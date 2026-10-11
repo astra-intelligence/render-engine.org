@@ -219,4 +219,8 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
+# We do not want to commit the output from local testing
 output/
+
+# Thanks Apple
+.DS_Store
