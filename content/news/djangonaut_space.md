@@ -2,6 +2,10 @@
 date: 2026-10-11 13:04:12.076499
 slug: djangonaut_space
 title: Welcome Djangonauts!
+type: article
+author: Dan Shernicoff
+image: /img/main-logo-transparent.svg
+descrption: Welcome to the Djangonauts of Session 7!
 ---
 This week Session 7 of [Djangonaut Space] opens and Render Engine is proud to be one of the projects that the
 Djangonauts will be working on. Our own [Dan Shernicoff] will be helping a team of 4 Djangonauts navigate
