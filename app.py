@@ -41,6 +41,14 @@ class Index(Page):
         )
     ]
 
+@app.page
+class Aboug(Page):
+    template = "page.html"
+    content_path = "content/about.md"
+    Parser: type[BasePageParser] = MarkdownPageParser
+    parser_extras: dict[str, list[str]] = {"markdown_extras": MD_EXTRAS}
+
+
 
 @app.collection
 class News(Blog):
