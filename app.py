@@ -42,7 +42,7 @@ class Index(Page):
     ]
 
 @app.page
-class Aboug(Page):
+class About(Page):
     template = "page.html"
     content_path = "content/about.md"
     Parser: type[BasePageParser] = MarkdownPageParser
