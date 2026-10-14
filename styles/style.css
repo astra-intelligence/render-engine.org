@@ -46,11 +46,28 @@ body {
 }
 
 header.head_foot_container {
+  box-sizing: border-box;
   min-height: 3em;
+  padding: 0.5em;
   position: sticky;
   top: 0;
   margin: 0;
   margin-bottom: 10px;
+}
+
+/* Title on the left, logo on the right, both vertically centered.
+ * The header padding gives the logo the same spacing on every side. */
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5em;
+  width: 100%;
+}
+
+header h1 {
+  margin: 0;
+  min-width: 0;
 }
 
 footer {
@@ -73,7 +90,9 @@ header {
 }
 
 img.re_logo {
-  float: right;
+  order: 1;
+  flex: none;
+  height: auto;
   object-fit: contain;
   width: clamp(100px, 30%, 200px);
 }
@@ -208,12 +227,22 @@ img.re_logo {
 .references {
   display: flex;
   flex-flow: row wrap;
-  vertical-align: middle;
+  align-items: center;
+  /* No column gap: the Python logo image already has whitespace on its left. */
+  gap: 0.5em 0;
   margin-top: 1em;
   border-top: 1px solid black;
   padding-top: 0.5em;
   text-align: center;
   justify-content: center;
+}
+
+.references p {
+  margin: 0;
+}
+
+.references img {
+  display: block;
 }
 
 .collection {
