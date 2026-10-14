@@ -228,7 +228,6 @@ img.re_logo {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  /* No column gap: the Python logo image already has whitespace on its left. */
   gap: 0.5em 0;
   margin-top: 1em;
   border-top: 1px solid black;
