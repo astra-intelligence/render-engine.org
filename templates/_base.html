@@ -4,6 +4,17 @@
 <link rel="stylesheet" href="/styles/style.css">
 <link rel="icon" type="image/png" href="/img/render-engine-logo-small.png" sizes="16x16">
 <link rel="icon" type="image/png" href="/img/render-engine-logo-small.png" sizes="32X32">
+<meta property="og:title" content="{{ title }}">
+<meta property="og:type" content="{% if collection and collection.title == 'News' %}article{% else %}website{% endif %}">
+<meta property="og:url" content="{{ SITE_URL }}{{ url }}">
+<meta property="og:image" content="{{ SITE_URL }}{{ image or '/img/render-engine-logo-small.png' }}">
+{% if description or descrption %}
+<meta property="og:description" content="{{ description or descrption }}">
+{% endif %}
+{% if author %}
+<meta property="article:author" content="{{ author }}">
+{% endif %}
+<meta name="twitter:card" content="summary_large_image">
 {% endblock %}
 {% block header %}
 <header class="head_foot_container">
